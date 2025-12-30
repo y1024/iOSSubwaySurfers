@@ -1,5 +1,5 @@
 #THEOS_DEVICE_IP = 10.21.254.13
-THEOS_DEVICE_IP = 192.168.2.194
+THEOS_DEVICE_IP = 10.21.202.224 -i /Users/lynnette/.ssh/id_ed25519 
 #THEOS_DEVICE_IP = 192.168.2.227 # install to device from pc
 ARCHS = arm64 #arm64e
 DEBUG = 0

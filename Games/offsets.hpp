@@ -8,88 +8,88 @@
 #include <string>
 #include <type_traits>
 
-#define offset_SuperRunVIPManager__IsActive ENCRYPTOFFSET("0x24AA26C")
+#define offset_SuperRunVIPManager__IsActive ENCRYPTOFFSET("0x2820E9C")
 #define offset_IDreamSky_BagManager$$IsUnlockedCharacter \
-  ENCRYPTOFFSET("0x3093FBC")
-#define offset_PlayerInfo__isHoverboardUnlockedm ENCRYPTOFFSET("0x1F7610C")
+  ENCRYPTOFFSET("0x344DF88")
+#define offset_PlayerInfo__isHoverboardUnlockedm ENCRYPTOFFSET("0x22A42C0")
 #define offset_IDreamSky_BagManager__IsUnlockedCharacterTheme \
-  ENCRYPTOFFSET("0x30942BC")
+  ENCRYPTOFFSET("0x344E288")
 #define offset_CharacterStickerManager__isCharacterUnlocked \
-  ENCRYPTOFFSET("0x257AD74")
-#define offset_PlayerInfo__IsOrnamentUnlocked ENCRYPTOFFSET("0x1F9B740")
-#define offset_HPFXBase___DefenseCheck ENCRYPTOFFSET("0x2F6D7D4")
-#define offset_SubwayAdManager__VideoFailed ENCRYPTOFFSET("0x249D030")
+  ENCRYPTOFFSET("0x28094B8")
+#define offset_PlayerInfo__IsOrnamentUnlocked ENCRYPTOFFSET("0x22C7904")
+#define offset_HPFXBase___DefenseCheck ENCRYPTOFFSET("0x333A074")
+#define offset_SubwayAdManager__VideoFailed ENCRYPTOFFSET("0x27f5110")
 #define offset_SYBO_Subway_Utilities_DebugSettings__get_IsAllowed \
-  ENCRYPTOFFSET("0x230028C")
+  ENCRYPTOFFSET("0x2662500")
 #define offset_SYBO_Subway_Utilities_DebugSettings__get_CharacterInvincible \
-  ENCRYPTOFFSET("0x2300478")
-#define offset_AntiAddictionManager_HasVerifid ENCRYPTOFFSET("0x2E91898")
-#define offset_ReportPlayerManager__CanReportPlayer ENCRYPTOFFSET("0x21018FC")
+  ENCRYPTOFFSET("0x26626ec")
+#define offset_AntiAddictionManager_HasVerifid ENCRYPTOFFSET("0x321a558")
+#define offset_ReportPlayerManager__CanReportPlayer ENCRYPTOFFSET("0x2437468")
 #define offset_ReportPlayerManager__ReportPlayerManager__CanShowReportPlayer \
-  ENCRYPTOFFSET("0x2101A04")
-#define offset_PlayerInfo__get_ReportPlayerDayTimes ENCRYPTOFFSET("0x1FA811C")
+  ENCRYPTOFFSET("0x2437570")
+#define offset_PlayerInfo__get_ReportPlayerDayTimes ENCRYPTOFFSET("0x22d1ed4")
 #define offset_SYBO_Subway_Characters_CharacterBase__AllowDoubleJump \
-  ENCRYPTOFFSET("0x2207844")
-#define offset_DummyMgr__GetNearestFrontDummy_BAWAY ENCRYPTOFFSET("0x2DFFA28")
+  ENCRYPTOFFSET("0x255c84c")
+#define offset_DummyMgr__GetNearestFrontDummy_BAWAY ENCRYPTOFFSET("0x31bbe00")
 //把这个找前方最近的重定向到找最靠前的
-#define offset_DummyMgr__GetFrontestDummy_CSEL ENCRYPTOFFSET("0x2DFFEB8")
-//最靠前的被patch成不管本地玩家，就找最前的
+#define offset_DummyMgr__GetFrontestDummy_CSEL ENCRYPTOFFSET("0x31bc290")
+//最靠前的被patch成不管本地玩家，就找最前的 注意是CSEL指令
 
-#define hookFunctionAddress_NetDirector__Rule_ReqItemByServer ENCRYPTOFFSET("0x34C5560")
+#define hookFunctionAddress_NetDirector__Rule_ReqItemByServer ENCRYPTOFFSET("0x38ac674")
 #define hookFunctionAddress_PlayerInfo__set_amountOfCoins_Address \
-  ENCRYPTOFFSET("0x1F626F8")
+  ENCRYPTOFFSET("0x228fdb8")
 #define hookFunctionAddress_PlayerInfo__set_amountOfKeys_Address \
-  ENCRYPTOFFSET("0x1F62A0C")
+  ENCRYPTOFFSET("0x22900cc")
 #define hookFunctionAddress_GameStats__set_score_Address \
-  ENCRYPTOFFSET("0x2F11200")
+  ENCRYPTOFFSET("0x32db4b8")
 #define hookFunctionAddress_HPowerupEnergy___TriggerIn_Address \
-  ENCRYPTOFFSET("0x2F8FD08")
+  ENCRYPTOFFSET("0x3375c90")
 #define hookFunctionAddress_HCharSpeed___ChangeState_Address \
-  ENCRYPTOFFSET("0x2F56010")
-#define hookFunctionAddress_HCharSpeed__get_speed ENCRYPTOFFSET("0x2F559C4")
+  ENCRYPTOFFSET("0x3322244")
+#define hookFunctionAddress_HCharSpeed__get_speed ENCRYPTOFFSET("0x3321cac")
 #define hookFunctionAddress_CharacterModel__GetScale_Address \
-  ENCRYPTOFFSET("0x232B79C")
+  ENCRYPTOFFSET("0x25c5e28")
 #define hookFunctionAddress_SYBO_Subway_Cameras_CameraData__get_CameraPositionOffset \
-  ENCRYPTOFFSET("0x21DA884")
+  ENCRYPTOFFSET("0x2537ab4")
 #define hookFunctionAddress_HRealPVPRoomManager__CommitGameChat_Address \
-  ENCRYPTOFFSET("0x2FB30D8")
+  ENCRYPTOFFSET("0x3398dbc")
 #define hookFunctionAddress_SYBO_Subway_Characters_Character__ApplyGravity \
-  ENCRYPTOFFSET("0x21FD970")
+  ENCRYPTOFFSET("0x255d574")
 #define hookFunctionAddress_PlayerInfo__get_playerNickName \
-  ENCRYPTOFFSET("0x1F7E3CC")
+  ENCRYPTOFFSET("0x22aa288")
 #define hookFunctionAddress_ReportPlayerManager__ReportPlayer \
-  ENCRYPTOFFSET("0x210164C")
+  ENCRYPTOFFSET("0x24371b8")
 #define hookFunctionAddress_RealPVPManager__get_allRank \
-  ENCRYPTOFFSET("0x207BEB8")
+  ENCRYPTOFFSET("0x23aea00")
 #define hookFunctionAddress_PartyPvpManager__get_allRank \
-  ENCRYPTOFFSET("0x1F0956C")
-#define hookFunctionAddress_EncrptUtil__AESEncrypt ENCRYPTOFFSET("0x2E0BF28")
+  ENCRYPTOFFSET("0x2234314")
+#define hookFunctionAddress_EncrptUtil__AESEncrypt ENCRYPTOFFSET("0x31c8b9c")
 
 namespace FunctionAddress
 {
-  inline uintptr_t HPowerupManager__get_instance_funcaddr = 0x2F90304;
-  inline uintptr_t HPowerupManager__IncEnergy_funcaddr = 0x2F903A4;
-  inline uintptr_t HPowerupManager__CanReleaseEnergy_addr = 0x2F949B8;
-  inline uintptr_t HPowerupManager__ReleaseEnergy_addr = 0x2F94AE4;
+  inline uintptr_t HPowerupManager__get_instance_funcaddr = 0x3376288;
+  inline uintptr_t HPowerupManager__IncEnergy_funcaddr = 0x3376328;
+  inline uintptr_t HPowerupManager__CanReleaseEnergy_addr = 0x337aab4;
+  inline uintptr_t HPowerupManager__ReleaseEnergy_addr = 0x337abe0;
 
-  inline uintptr_t PlayerInfo__set_NewTreasureKey_funcaddr = 0x1FA2D10;
+  inline uintptr_t PlayerInfo__set_NewTreasureKey_funcaddr = 0x22ccae0;
   inline uintptr_t SYBO_Subway_Characters_Character__get_Instance_Addr =
-      0x21F22EC;
+      0x2556498;
   inline uintptr_t SYBO_Subway_Characters_CharacterBase__get_runningTime_addr =
-      0x2203CC8;
-  inline uintptr_t UnityEngine_Camera__get_main_funcaddr = 0x433A618;
-  inline uintptr_t UnityEngine_Camera__WorldToScreenPoint_addr = 0x4339798;
-  inline uintptr_t DummyMgr__get_allDummy_addr = 0x2DF97E0;
-  inline uintptr_t DummyMgr__get_Instance_addr = 0x2DF9620;
-  inline uintptr_t PhotonNetwork__get_otherPlayers_addr = 0x1F2B128;
-  inline uintptr_t PhotonPlayer__get_ID_addr = 0x1F2CA64;
-  inline uintptr_t PhotonPlayer__get_UserId_addr = 0x1F36C0C;
-  inline uintptr_t NetDirector__PostRoom_EndGame_addr = 0x34CB72C;
-  inline uintptr_t OnlineSettings__get_instance = 0x357CDB4;
-  inline uintptr_t OnlineSettings__get_RealPvpCheatTime_addr = 0x358B884;
-  inline uintptr_t PVPModuleMgr__get_Instance_addr = 0x1EC1AEC;
-  inline uintptr_t PVPModuleMgr__get_ROUTE_LEGNGTH_addr = 0x1EC1A44;
-  inline uintptr_t BindWeChatManager__get_Instance_addr = 0x334C28C;
+      0x25652a4;
+  inline uintptr_t UnityEngine_Camera__get_main_funcaddr = 0x46cd78c;
+  inline uintptr_t UnityEngine_Camera__WorldToScreenPoint_addr = 0x46cc90c;
+  inline uintptr_t DummyMgr__get_allDummy_addr = 0x31b5bb8;
+  inline uintptr_t DummyMgr__get_Instance_addr = 0x31b59f8;
+  inline uintptr_t PhotonNetwork__get_otherPlayers_addr = 0x22565d0;
+  inline uintptr_t PhotonPlayer__get_ID_addr = 0x2261bec;
+  inline uintptr_t PhotonPlayer__get_UserId_addr = 0x2261dfc;
+  inline uintptr_t NetDirector__PostRoom_EndGame_addr = 0x38b2840;
+  inline uintptr_t OnlineSettings__get_instance = 0x216dc98;
+  inline uintptr_t OnlineSettings__get_RealPvpCheatTime_addr = 0x217d060;
+  inline uintptr_t PVPModuleMgr__get_Instance_addr = 0x21c4518;
+  inline uintptr_t PVPModuleMgr__get_ROUTE_LEGNGTH_addr = 0x21c4470;
+  inline uintptr_t BindWeChatManager__get_Instance_addr = 0x37aa6e0;
 
   inline void initFunctionAddress(uintptr_t base)
   {

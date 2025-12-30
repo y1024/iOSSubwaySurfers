@@ -151,14 +151,14 @@ struct SYBO_Subway_Cameras_CharacterCamera_o // sizeof=0x120
 
 
 /*DummyField*/
-#define structoffset_DummyFields_PlayerID 0x308
-#define structoffset_DummyFields_CharacterID 0x30C
-#define structoffset_DummyFields_name 0x330
-#define structoffset_DummyFields_isAIMode 0x368
+#define structoffset_DummyFields_PlayerID 0x328
+#define structoffset_DummyFields_CharacterID 0x32C
+#define structoffset_DummyFields_name 0x350
+#define structoffset_DummyFields_isAIMode 0x388
 /*Dummy_Fields 继承自CharacterBase*/
-#define structoffset_DummyFields_gamePosition 0x194
-#define structoffset_DummyFields_transformPosition 0x1A0
-#define structoffset_DummyFields_gravity 0xAC
+#define structoffset_DummyFields_gamePosition 0x19C
+#define structoffset_DummyFields_transformPosition 0x1A8
+#define structoffset_DummyFields_gravity 0xB4
 #define structoffset_DummyFields_UID 0x10
 /*SYBO_Subway_Characters_Character_o也继承base*/
 

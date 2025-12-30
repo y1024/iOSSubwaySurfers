@@ -69,42 +69,42 @@ bool InstallHooks()
 
 void patch_at_start()
 {
-     ONETIMEPATCH(ENCRYPTOFFSET("0x249D138"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x27f5218"),
                   PATCH_RET0) // 移除SubwayAdManager__ShowSplashAd
-     ONETIMEPATCH(ENCRYPTOFFSET("0x249D35C"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x27f543c"),
                   PATCH_RET1) // 移除SubwayAdManager__ShowSplashAdClosed
      ONETIMEPATCH(
-         ENCRYPTOFFSET("0x27DA5CC"),
+         ENCRYPTOFFSET("0x2b69814"),
          PATCH_RET) // 禁用货币反作弊CheatDetectorManager__CurrencyCheatDetect
-     ONETIMEPATCH(ENCRYPTOFFSET("0x27D9E18"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x2b69024"),
                   PATCH_RET) // 禁用CheatDetectorManager__ObscuredDetectorCallback
-     ONETIMEPATCH(ENCRYPTOFFSET("0x27DA510"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x2b69758"),
                   PATCH_RET) // 禁用CheatDetectorManager__SpeedHackDetectorCallback
-     ONETIMEPATCH(ENCRYPTOFFSET("0x27DA0F8"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x2b69308"),
                   PATCH_RET) // 禁用CheatDetectorManager__ShieldUser
-     ONETIMEPATCH(ENCRYPTOFFSET("0x2EBC37C"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x328b6c0"),
                   PATCH_RET) // 禁用FrontScreen__UploadCheaterPlayerLog
-     ONETIMEPATCH(ENCRYPTOFFSET("0x334D5B8"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x37aba0c"),
                   PATCH_RET) // 禁用BindWeChatManager__OnLoginShield
-     ONETIMEPATCH(ENCRYPTOFFSET("0x1FC0248"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x22e9b94"),
                   PATCH_RET0) // PlayerInfo__CheckCheaterByDeviceId
-     ONETIMEPATCH(ENCRYPTOFFSET("0x1FC037C"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x22e9cc8"),
                   PATCH_RET0) // PlayerInfo__CheckCheaterByCoins
-     ONETIMEPATCH(ENCRYPTOFFSET("0x1FC0468"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x22e9db4"),
                   PATCH_RET0) // PlayerInfo__CheckCheaterByKeys
-     ONETIMEPATCH(ENCRYPTOFFSET("0x2F45834"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x3310360"),
                   PATCH_RET0) // Globals__isCheater
-     ONETIMEPATCH(ENCRYPTOFFSET("0x1EC2180"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x21c4bac"),
                   PATCH_RET0) // PVPModuleMgr__get_CheatState
-     ONETIMEPATCH(ENCRYPTOFFSET("0x1EC2208"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x21c4c34"),
                   PATCH_RET) // PVPModuleMgr__set_CheatState
-     ONETIMEPATCH(ENCRYPTOFFSET("0x3583BA4"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x21752e8"),
                   PATCH_RET0) // OnlineSettings__get_CheckCheatAPP
-     ONETIMEPATCH(ENCRYPTOFFSET("0x3584ED4"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x2176618"),
                   PATCH_RET0) // OnlineSettings__get_CheckCheatAccumulate
-     ONETIMEPATCH(ENCRYPTOFFSET("0x2C621D8"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x2Cd4e74"),
                   PATCH_RET0) // AdditionManager__CheckDefenseCheat
-     ONETIMEPATCH(ENCRYPTOFFSET("0x23C8C9C"),
+     ONETIMEPATCH(ENCRYPTOFFSET("0x2739124"),
                   PATCH_RET1) // SkyNet__IsRealApp
 }
 
